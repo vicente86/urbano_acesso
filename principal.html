@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+    <link rel="stylesheet" href="assets/css/style.css"></link>
+    <title>Tela Principal</title>
+</head>
+<body>
+    
+
+    <div class="container">
+
+
+        <header>
+            <h1>Urbano Acesso</h1>
+            
+            <i class="perfil">
+                <img id="icone-perfil" src="imagens/icones/person-circle.svg" alt="">
+            </i>
+            
+        </header>
+
+
+        <div class="barra-pesquisa">
+            <input type="text" id="search">
+            <button type="button" id="search-button">Pesquisar</button>
+        </div>
+
+
+        <div class="container-meio">
+
+            <ul class="banco-dados">
+
+            </ul>
+
+
+            <div id="map-container">
+                
+            </div>
+
+
+            <ul id="lista-resultado">
+
+            </ul>
+
+        </div>
+
+
+        <div class="container-botao-add">
+            <button type="button">+</button>
+        </div>
+
+
+        <footer>
+            &copy;Daniel Vicente<br>
+            &copy;Bárbara Matos<br>
+            &copy;Paulo Silva<br>
+        </footer>
+
+    </div>
+
+    <!-------------- JS -------------->
+    
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

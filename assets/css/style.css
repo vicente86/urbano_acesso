@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+/* -------- RESET --------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --azul: #5151b8;
+    --laranja: #f76300;
+    --vermelho: #d80000;
+    --cinza: #423e3e;
+    --branco: #dfdbdb;
+}
+
+/* -------- CONTAINER --------*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* -------- HEADER --------*/
+
+.container header {
+    background-color: var(--azul);
+    color: var(--branco);
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.container header .perfil {
+    width: 50px;
+    height: 50px;
+}
+
+/* -------- BARRA DE PESQUISA --------*/
+
+.barra-pesquisa {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0 30px 0;
+}
+
+.barra-pesquisa input {
+    width:300px;
+    margin-right: 10px;
+}
+
+.barra-pesquisa input, .barra-pesquisa button {
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+
+
+/* -------- CONTAINER MEIO --------*/
+
+.container-meio {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#map-container {
+    width: 350px;
+    height: 350px;
+    box-shadow: 0 0 5px #000;
+    margin-right: 10px;
+}
+
+.banco-dados {
+    display: none;
+    width: 350px;
+    height: 350px;
+    background-color: var(--branco);
+    box-shadow: 0 0 5px #000;
+    overflow-y: scroll;
+    margin-right: 10px;
+}
+
+#lista-resultado {
+    width: 350px;
+    height: 350px;
+    background-color: var(--branco);
+    box-shadow: 0 0 5px #000;
+    list-style: none;
+}
+
+#lista-resultado li {
+    border: 1px solid var(--cinza);
+    padding: 3px;
+    cursor:pointer;
+    transition: .3s ease-in all;
+}
+
+#lista-resultado li:hover {
+    background-color: var(--cinza);
+    color: var(--branco);
+    padding: 3px;
+    transition: .3s ease-in all;
+}
+
+/*-------- CONTAINER BOTÃO ADD --------*/
+
+.container-botao-add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 50px 0;
+       
+}
+
+.container-botao-add button {
+    width: 50px;
+    height: 50px;
+    outline: none;
+    border-radius: 50%;
+    font-size: 38px;
+    text-align: center;
+    line-height: 45px;
+    background-color: var(--azul);
+    color: var(--branco);
+    border: none;
+    cursor: pointer;
+    transition:.3s ease-out all;
+}
+
+.container-botao-add button:hover {
+    background-color: var(--branco);
+    color: var(--azul);
+    transition:.3s ease-in all;
+}
+
+/*-------- RODAPÉ --------*/
+
+footer {
+    background-color: var(--azul);
+    color: var(--branco);
+    padding: 50px 0;
+    text-align: center;
+}
+
+
+
