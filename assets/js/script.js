@@ -4,6 +4,9 @@ const resultList = document.getElementById('lista-resultado');
 const mapContainer = document.getElementById('map-container');
 const currentMarkers = [];
 
+// EMPURRA O RODAPÉ PARA O FINAL DA PÁGINA
+document.getElementsByTagName('footer')[0].style.top = String(window.screen.height) + "px";
+
 // EVENTO DE BOTÕES DO MODAL
 
 function botao_add(){

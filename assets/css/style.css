@@ -143,11 +143,10 @@
 /*-------- RODAPÉ --------*/
 
 footer {
+    position: absolute;
+    width: 100%;
     background-color: var(--azul);
     color: var(--branco);
     padding: 50px 0;
     text-align: center;
 }
-
-
-
