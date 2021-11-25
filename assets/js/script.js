@@ -4,24 +4,31 @@ const resultList = document.getElementById('lista-resultado');
 const mapContainer = document.getElementById('map-container');
 const currentMarkers = [];
 
+
 // EMPURRA O RODAPÉ PARA O FINAL DA PÁGINA
 document.getElementsByTagName('footer')[0].style.top = String(window.screen.height) + "px";
+
+// MODAL PERFIL
+
+function menuPerfil(){
+    document.querySelector(".dropdown-perfil").classList.toggle("visibilidade");
+}
 
 // EVENTO DE BOTÕES DO MODAL
 
 function botao_add(){
         
-    document.querySelector(".caixa-modal-form-add").style.display = "flex";
-    document.querySelector(".caixa-modal-form-add").style.justifyContent = "center";
-    document.querySelector(".caixa-modal-form-add").style.alignItems = "center";
+    document.querySelector(".modal-form-add").style.display = "flex";
+    document.querySelector(".modal-form-add").style.justifyContent = "center";
+    document.querySelector(".modal-form-add").style.alignItems = "center";
 }
 
 function fechar(){
-    document.querySelector(".caixa-modal-form-add").style.display = "none";
+    document.querySelector(".modal-form-add").style.display = "none";
 }
 
 function cancelar(){
-    document.querySelector(".caixa-modal-form-add").style.display = "none";
+    document.querySelector(".modal-form-add").style.display = "none";
 }
 
 // FORMULÁRIO MODAL

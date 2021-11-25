@@ -17,12 +17,18 @@
         <header>
             <h1>Urbano Acesso</h1>
             
-            <i class="perfil">
-                <img id="icone-perfil" src="imagens/icones/person-circle.svg" alt="">
-            </i>
+            <ul id="caixa-ul-perfil">
+                <li>
+                    <img id="icone-perfil" src="imagens/icones/person-circle.svg" onclick="menuPerfil()">
+                    <ul class="dropdown-perfil">
+                        <li><a href="#">Editar Perfil</a></li>
+                        <li><a href="#">Editar lugares</a></li>
+                        <li><a href="#">Sair</a></li>
+                    </ul>
+                </li>
+            </ul>
             
         </header>
-
 
         <div class="barra-pesquisa">
             <input type="text" id="search">
@@ -50,9 +56,57 @@
 
 
         <div class="container-botao-add">
-            <button type="button">+</button>
+            <button type="button" onclick="botao_add()">+</button>
         </div>
 
+        <div class="modal-form-add">
+            
+            <div class="form-botao-add">
+                <div class="caixa-icone-fechar">
+                    <button type="button" class="btn-fechar" onclick="fechar()">x</button>
+                </div>
+
+                <select name="" id="add-estado">
+                    <option value="">Escolha o estado</option>
+                    <option value="AC">AC</option>
+                    <option value="AL">AL</option>
+                    <option value="AM">AM</option>
+                    <option value="AP">AP</option>
+                    <option value="BA">BA</option>
+                    <option value="CE">CE</option>
+                    <option value="DF">DF</option>
+                    <option value="ES">ES</option>
+                    <option value="GO">GO</option>
+                    <option value="MA">MA</option>
+                    <option value="MG">MG</option>
+                    <option value="MS">MS</option>
+                    <option value="MT">MT</option>
+                    <option value="PA">PA</option>
+                    <option value="PB">PB</option>
+                    <option value="PE">PE</option>
+                    <option value="PI">PI</option>
+                    <option value="PR">PR</option>
+                    <option value="RJ">RJ</option>
+                    <option value="RN">RN</option>
+                    <option value="RO">RO</option>
+                    <option value="RR">RR</option>
+                    <option value="RS">RS</option>
+                    <option value="SE">SE</option>
+                    <option value="SC">SC</option>
+                    <option value="TO">TO</option>
+                </select>
+
+                <input type="text" placeholder="Cidade" id="add-cidade">
+                <input type="text" placeholder="Rua Fulano de Tal" id="add-ende">
+                <input type="number" placeholder="Nº" min="0" id="add-ende-numero">
+                <input type="text" placeholder="estabelecimento ou lugar" id="add-lugar">
+                <textarea id="add-desc" cols="30" rows="10" placeholder="Descrição"></textarea>
+
+                <button id="btn-adicionar">Adicionar</button>
+
+            </div>
+            
+        </div>
 
         <footer>
             &copy;Daniel Vicente<br>
